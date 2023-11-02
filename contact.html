@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>university web site</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Oswald&family=Pop
+pins:wght@100;200;300;400;600;700&family=Roboto:wght@900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+<!--====CONTACT US=======-->
+    <section class="sub-header">
+        <nav>
+            <div>
+            <a href=""><img class="image" src="potos/download.png" alt="university logo"></a>
+           <h1 class="clt-name">CALICUT UNIVERSTY</h1>
+        </div>
+            <div class="nav-link" id="navLink">
+                <i class="fa fa-times" onclick="hideMenu()" ></i>
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="bloge.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <h1 style="margin-top: 100px;">Contact Us</h1>
+    </section>
+    <!-- =======CONTACT US=========== -->
+       <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62624.1258962055!2d76.00755920383712!3d11.
+        187052833317694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6487a39861617%3A0xd294b35020cccd20!
+        2sKuzhimanna%2C%20Kerala%20673641!5e0!3m2!1sen!2sin!4v1698739946061!5m2!1sen!2sin" width="600" height="450" 
+        style="border:0;" allowfullscreen=""
+         loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       </section>
+       <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+               <div>
+                <i class="fa fa-home" ></i>
+                <span>
+                <h5>thirur-calicut road,thenchippalam</h5>
+                <p>kerala,673635</p>
+            </span>
+               </div>
+               <div>
+                <i class="fa fa-phone" ></i>
+                <span>
+                <h5>+91  0494 240 7227</h5>
+                <p>monday-saturday  9:00 am to 6:00 pm</p>
+            </span>
+               </div>
+               <div>
+                <i class="fa fa-envelope-o" ></i>
+                <span>
+                <h5> ce@uoc.ac.in</h5>
+                <p>email us your query</p>
+            </span>
+               </div>
+            </div>
+            <div class="contact-col">
+                <form action="">
+                    <div class="contact-input-group">
+                    <input type="text" id="contact-name" placeholder="Enter your name" onkeyup="validateName()" required>
+                    <span id="name-error"></span>
+                </div>
+                <div class="contact-input-group">
+                    <input type="email" id="contact-email" placeholder="Enter your email address" onkeyup="validateemail()" required>
+                    <span id="email-error"></span>
+                </div>
+                    <div class="contact-input-group">
+                    <input type="text" id="contact-subject" placeholder="Enter your subject" onkeyup="validatesubject()" required>
+                    <span id="subject-error"></span>
+                </div>
+                    <div class="contact-input-group">
+                    <textarea  rows="8" id="contact-message" placeholder="message" onkeyup="validatemessage()" required></textarea>
+                    <span style="margin-bottom: 127px;" id="message-error"></span>
+                </div>
+                    
+                    <button type="submit"  class="hero-btn red-btn" onclick="return validateForm()" >send message</button>
+                    <span id="submit-error"></span>
+                
+                </form>
+            </div>
+
+        </div>
+       </section>
+ <!--========= footer =======-->
+<section class="footer">
+    <h4>ABOUT US</h4>
+    <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, eaque? Enim, earum eos! Vel porro 
+        veritatis, laboriosam molestiae voluptatibus pariatur libero <br> perferendis dolore eligendi esse, non 
+        aliquam ab accusamus ea!</P>
+        <div class="icon">
+        <i class="fa fa-facebook" ></i>
+        <i class="fa fa-twitter" ></i>
+        <i class="fa fa-instagram" ></i>
+        <i class="fa fa-linkedin" ></i>
+    </div>
+        <p>made with  <i class="fa fa-heart-o" ></i> by mishab</p>
+</section>
+
+
+
+
+    <script src="https://kit.fontawesome.com/bfeec5d6b4.js" crossorigin="anonymous"></script>
+
+    <!--java script for toggle menu-->
+<script>
+    var navLink=document.getElementById("navLink")
+
+    function showMenu(){
+        navLink.style.right="0"
+    }
+    function hideMenu(){
+        navLink.style.right="-200px"
+    }
+</script>
+<script src="script.js"></script>
+</body>
+</html>

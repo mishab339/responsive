@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>university web site</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Oswald&family=Pop
+pins:wght@100;200;300;400;600;700&family=Roboto:wght@900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+<!--====BLOGE=======-->
+    <section class="sub-header">
+        <nav>
+            <div>
+            <a href=""><img class="image" src="potos/download.png" alt="university logo"></a>
+           <h1 class="clt-name">CALICUT UNIVERSTY</h1>
+        </div>
+            <div class="nav-link" id="navLink">
+                <i class="fa fa-times" onclick="hideMenu()" ></i>
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="bloge.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <h1 style="margin-top: 100px;">Our Cousre & Cirtificate For 2023</h1>
+    </section>
+       <!-- =======BLOGE PAGE CONTENT======= -->
+       <section class="bloge-content">
+        <div class="row">
+            <div class="bloge-left">
+                <img src="potos/blogleft.jpg" alt="">
+                <h2>Our Cousre & Cirtificate For 2023</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid minus nisi dolorem alias
+                     mollitia eos sit doloribus autem laudantium totam quod ratione cum recusandae, aperiam culpa dicta
+                      fugiat suscipit quisquam.
+                Ea, non quos voluptatem deserunt perferendis magnam placeat architecto corporis tempore consequatur,
+                 voluptas officiis perspiciatis. Doloremque reiciendis neque tempore sapiente, nesciunt atque, dolor
+                  pariatur rem asperiores voluptatum iure. Laborum, laudantium.
+                Perferendis, asperiores, illo ratione sunt repudiandae ab minus cum deserunt beatae, a reiciendis culpa
+                 cupiditate necessitatibus soluta veniam dolor consequatur. Delectus officia tenetur numquam quibusdam 
+                 laboriosam doloribus sequi. Laudantium, nisi.</p>
+                 <br>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ducimus rem eligendi cupiditate optio perferendis
+                     consequuntur dignissimos cum mollitia harum? Voluptatibus porro ex, dignissimos doloribus est autem 
+                     praesentium sit earum.
+                 Neque quia recusandae alias porro doloremque perferendis, mollitia quas nulla. Minima, cupiditate blanditiis! 
+                 Eaque odit ducimus fugiat adipisci delectus non possimus qui deleniti totam, magni hic nesciunt reiciendis
+                  suscipit mollitia.
+                 Quam at libero, accusamus ut eum accusantium vel consequuntur velit aliquid molestiae animi earum! 
+                 Officia
+                  quam aliquid alias. Quo eveniet facere, blanditiis sit ab dignissimos corrupti illum explicabo amet 
+                  iure!</p>
+                  <br>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam dolore ipsum vero necessitatibus,
+                     deleniti id asperiores molestias repudiandae voluptas animi consequuntur natus quia quae. Omnis 
+                     iusto quo tempore eveniet accusamus?
+                  Molestiae deserunt soluta iste ipsum perspiciatis eligendi, aut doloribus sequi, corporis illum rerum
+                   unde repudiandae porro delectus autem nihil. Laborum, veritatis? Corrupti, reprehenderit nam veritatis
+                    voluptate temporibus non odio quas.
+                  Praesentium officia nam illo laudantium exercitationem illum, porro in consequatur ad quam quos, quia 
+                  eveniet impedit atque quibusdam assumenda, aut vitae. Corporis repellendus laboriosam dignissimos
+                   voluptatum accusantium fugit enim delectus.
+                  Itaque quaerat sapiente impedit totam placeat incidunt, perferendis ipsum deleniti! Quos soluta ipsa
+                   dolores, ex ipsam aliquam totam voluptatum. Delectus nihil optio obcaecati voluptatibus totam? Eius
+                    nostrum voluptates hic itaque.</p>
+                    
+                    <div class="comment-box">
+                        <h3>leave a comment</h3>
+                        <form  class="comment-form">
+                            <div class="input-group">
+                               
+                            <input  type="text" placeholder="Enter name " id="contact-name" onkeyup="validateName()" required>
+                            <span id="name-error"></span>
+                        </div>
+                        <div class="input-group">
+                            <input  type="email" placeholder="Enter email" id="contact-email" onkeyup="validateemail()" required>
+                            <span id="email-error"></span>
+                        </div>
+                        <div class="input-group">
+                            <textarea rows="5" placeholder="your comment" id="contact-message" onkeyup="validatemessage()" required></textarea>
+                            <span id="message-error"></span>
+                        </div>
+                        
+                            <button onclick="return validateForm()" type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                           <span id="submit-error"></span>
+                        
+                        </form>
+                    </div>
+            </div>
+            <div class="bloge-right">
+                 <h3>post catogories</h3>
+                 <div>
+                 <span>bussiness anelityc </span>
+                 <span>21</span>
+                </div>
+                <div>
+                 <span>data sciense </span>
+                 <span>32</span>
+                 </div>
+                 <div>
+                 <span>mechion learning </span>
+                 <span>35</span>
+                 </div>
+                 <div>
+                 <span>computer sciense </span>
+                 <span>44</span>
+                </div>
+                <div>
+                 <span>master of computer application </span>
+                 <span>47</span>
+              </div>
+              <div>
+                 <span>space research </span>
+                 <span>49</span>
+            </div>
+            <div>
+                <span>engeneering </span>
+                <span>56</span>
+           </div>
+        </div>
+       </section>
+            
+    <!-- =========FECILITIES========= -->
+   
+ <!--========= footer =======-->
+<section class="footer">
+    <h4>ABOUT US</h4>
+    <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, eaque? Enim, earum eos! Vel porro 
+        veritatis, laboriosam molestiae voluptatibus pariatur libero <br> perferendis dolore eligendi esse, non 
+        aliquam ab accusamus ea!</P>
+        <div class="icon">
+        <i class="fa fa-facebook" ></i>
+        <i class="fa fa-twitter" ></i>
+        <i class="fa fa-instagram" ></i>
+        <i class="fa fa-linkedin" ></i>
+    </div>
+        <p>made with  <i class="fa fa-heart-o" ></i> by mishab</p>
+</section>
+
+
+
+     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/bfeec5d6b4.js" crossorigin="anonymous"></script>
+
+    <!--java script for toggle menu-->
+<script>
+    var navLink=document.getElementById("navLink")
+
+    function showMenu(){
+        navLink.style.right="0"
+    }
+    function hideMenu(){
+        navLink.style.right="-200px"
+    }
+   
+
+
+</script>
+
+</body>
+</html>

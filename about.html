@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>university web site</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Oswald&family=Pop
+pins:wght@100;200;300;400;600;700&family=Roboto:wght@900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+<!--====ABOUT US=======-->
+    <section class="sub-header">
+        <nav>
+            <div>
+            <a href=""><img class="image" src="potos/download.png" alt="university logo"></a>
+           <h1 class="clt-name">CALICUT UNIVERSTY</h1>
+        </div>
+            <div class="nav-link" id="navLink">
+                <i class="fa fa-times" onclick="hideMenu()" ></i>
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="bloge.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <h1 style="margin-top: 100px;">About Us</h1>
+    </section>
+        <!-- ======ABOUT US CONTENT===== -->
+        <section class="about-us">
+            <div class="row">
+                <div class="about-col">
+                    <h1>we are kerala's best university</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea quas maxime inventore autem quidem voluptatem,
+                         deleniti ab, beatae qui, quaerat asperiores? Non perferendis
+                        odio illum numquam, voluptates molestias accusamus dolore!</p>
+                        <a href="" class="hero-btn red-btn">Explore Now</a>
+                </div>
+                <div class="about-col">
+                    <img src="potos/class room.jpg" alt="">
+                </div>
+            </div>
+        </section>
+ <!--========= footer =======-->
+<section class="footer">
+    <h4>ABOUT US</h4>
+    <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, eaque? Enim, earum eos! Vel porro 
+        veritatis, laboriosam molestiae voluptatibus pariatur libero <br> perferendis dolore eligendi esse, non 
+        aliquam ab accusamus ea!</P>
+        <div class="icon">
+        <i class="fa fa-facebook" ></i>
+        <i class="fa fa-twitter" ></i>
+        <i class="fa fa-instagram" ></i>
+        <i class="fa fa-linkedin" ></i>
+    </div>
+        <p>made with  <i class="fa fa-heart-o" ></i> by mishab</p>
+</section>
+
+
+
+
+    <script src="https://kit.fontawesome.com/bfeec5d6b4.js" crossorigin="anonymous"></script>
+
+    <!--java script for toggle menu-->
+<script>
+    var navLink=document.getElementById("navLink")
+
+    function showMenu(){
+        navLink.style.right="0"
+    }
+    function hideMenu(){
+        navLink.style.right="-200px"
+    }
+</script>
+
+</body>
+</html>
