@@ -439,6 +439,9 @@ h3{
 .input-group span i{
     color: seagreen;
 }
+.contact-input-group span i{
+    color: seagreen;
+}
 #submit-error{
     color: red;
     font-size: 14px;
